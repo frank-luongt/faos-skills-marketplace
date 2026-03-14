@@ -1,0 +1,60 @@
+{
+  "name": "faos-skills-marketplace",
+  "version": "1.0.0",
+  "description": "520+ AI-powered skills and 31 agent plugins for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://faosx.ai"
+  },
+  "repository": "https://github.com/frank-luongt/faos-skills-marketplace",
+  "license": "Apache-2.0",
+  "platforms": {
+    "cowork": {
+      "skills_count": 520,
+      "plugins_count": 31,
+      "format": "SKILL.md (YAML frontmatter: name, description, tags)"
+    },
+    "codex": {
+      "skills_count": 520,
+      "format": "SKILL.md (YAML frontmatter: name, description) + agents/openai.yaml"
+    },
+    "gemini": {
+      "skills_count": 520,
+      "format": "TOML commands (.gemini/commands/faos-skill-*.toml)"
+    },
+    "copilot": {
+      "skills_count": 520,
+      "format": ".instructions.md (YAML frontmatter: applyTo) in .github/instructions/"
+    },
+    "perplexity": {
+      "skills_count": 520,
+      "format": "SKILL.md (YAML frontmatter: name, description, tags, subagent annotations)"
+    }
+  },
+  "categories": [
+    "engineering",
+    "product",
+    "data-ai",
+    "security",
+    "testing",
+    "c-suite",
+    "sales",
+    "marketing",
+    "customer-service",
+    "creative",
+    "industry-modules"
+  ],
+  "industries": [
+    "fintech", "healthcare", "proptech", "aviation", "edutech",
+    "retail", "manufacturing", "insurance", "logistics", "gaming",
+    "agriculture", "automotive", "banking", "travel", "martech",
+    "cybersecurity", "talent-hr", "professional-services",
+    "systems-integration", "software", "investment-management"
+  ],
+  "links": {
+    "website": "https://faosx.ai/skills",
+    "documentation": "https://docs.faosx.ai/skills",
+    "platform": "https://faosx.ai",
+    "support": "https://github.com/frank-luongt/faos-skills-marketplace/issues"
+  }
+}

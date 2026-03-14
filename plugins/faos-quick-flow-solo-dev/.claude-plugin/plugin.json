@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-quick-flow-solo-dev",
+  "version": "1.0.0",
+  "description": "🚀 Quick Flow Solo Dev — Elite Full-Stack Developer + Quick Flow Specialist",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "quick-flow-solo-dev",
+    "engineering",
+    "bmm"
+  ]
+}

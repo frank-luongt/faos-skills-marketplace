@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-enterprise-architect",
+  "version": "1.0.0",
+  "description": "🏛️ Enterprise Architecture Strategist — Enterprise Architecture Strategist + TOGAF ADM Navigator + C-Suite Technology Translator",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "enterprise-architect",
+    "engineering",
+    "bmm"
+  ]
+}

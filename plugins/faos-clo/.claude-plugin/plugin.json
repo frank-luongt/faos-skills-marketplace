@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-clo",
+  "version": "1.0.0",
+  "description": "⚖️ Chief Legal Officer — Legal Guardian & Business Enabler",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "clo",
+    "leadership",
+    "c-suite"
+  ]
+}

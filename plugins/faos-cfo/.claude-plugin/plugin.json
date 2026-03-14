@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-cfo",
+  "version": "1.0.0",
+  "description": "💰 Chief Financial Officer — Financial Steward & Strategic Business Partner",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "cfo",
+    "leadership",
+    "c-suite"
+  ]
+}

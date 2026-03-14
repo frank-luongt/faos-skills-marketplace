@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-sre",
+  "version": "1.0.0",
+  "description": "🚀 Site Reliability Engineer — Site Reliability Engineer + Platform Automation Specialist",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "sre",
+    "engineering",
+    "bmm"
+  ]
+}

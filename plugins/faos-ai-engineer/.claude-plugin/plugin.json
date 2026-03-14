@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-ai-engineer",
+  "version": "1.0.0",
+  "description": "🤖 AI Engineer — AI Engineer + LLM Systems Specialist",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "ai-engineer",
+    "data-ai",
+    "bmm"
+  ]
+}

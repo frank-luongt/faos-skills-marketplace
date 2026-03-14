@@ -1,0 +1,105 @@
+name: Sync Skills from FAOS
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Export target (cowork, codex, perplexity, all)'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - cowork
+          - codex
+          - perplexity
+  push:
+    branches: [main]
+    paths:
+      - '.faos/skills/**'
+      - '.faos/agents/**'
+      - 'scripts/export-skills.py'
+      - 'scripts/export-plugins.py'
+
+permissions:
+  contents: write
+
+jobs:
+  export-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout FAOS source
+        uses: actions/checkout@v4
+        with:
+          repository: frank-luongt/Foundation-AgenticOS
+          token: ${{ secrets.FAOS_PAT }}
+          path: faos-source
+
+      - name: Checkout marketplace
+        uses: actions/checkout@v4
+        with:
+          path: marketplace
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Export skills
+        working-directory: faos-source
+        run: |
+          TARGET="${{ github.event.inputs.target || 'all' }}"
+          python scripts/export-skills.py --target "$TARGET" --clean
+
+      - name: Export Cowork plugins
+        working-directory: faos-source
+        run: python scripts/export-plugins.py --clean
+
+      - name: Sync to marketplace repo
+        run: |
+          # Sync Cowork skills
+          rsync -av --delete faos-source/export/cowork/ marketplace/skills/cowork/
+          # Sync Codex skills
+          rsync -av --delete faos-source/export/codex/ marketplace/skills/codex/
+          # Sync Gemini skills
+          rsync -av --delete faos-source/export/gemini/ marketplace/skills/gemini/
+          # Sync Copilot skills
+          rsync -av --delete faos-source/export/copilot/ marketplace/skills/copilot/
+          # Sync Perplexity skills
+          rsync -av --delete faos-source/export/perplexity/ marketplace/skills/perplexity/
+          # Sync Cowork plugins
+          rsync -av --delete faos-source/export/cowork-plugins/ marketplace/plugins/
+
+      - name: Generate catalog
+        working-directory: marketplace
+        run: |
+          echo "# FAOS Skills Catalog" > CATALOG.md
+          echo "" >> CATALOG.md
+          echo "Auto-generated on $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> CATALOG.md
+          echo "" >> CATALOG.md
+          echo "## Skills by Platform" >> CATALOG.md
+          echo "" >> CATALOG.md
+          for platform in cowork codex perplexity; do
+            count=$(find skills/$platform -name "SKILL.md" 2>/dev/null | wc -l)
+            echo "- **$platform**: $count skills" >> CATALOG.md
+          done
+          echo "" >> CATALOG.md
+          echo "## Plugins" >> CATALOG.md
+          plugin_count=$(find plugins -maxdepth 1 -type d | tail -n +2 | wc -l)
+          echo "- **Cowork Agent Plugins**: $plugin_count" >> CATALOG.md
+
+      - name: Commit and push
+        working-directory: marketplace
+        run: |
+          git config user.name "FAOS Bot"
+          git config user.email "bot@faosx.ai"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "sync: Update skills and plugins from FAOS source"
+            git push
+          fi

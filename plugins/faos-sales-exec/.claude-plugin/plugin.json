@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-sales-exec",
+  "version": "1.0.0",
+  "description": "💼 Sales Executive — Deal Closer & Customer Advisor",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "sales-exec",
+    "growth",
+    "bmm"
+  ]
+}

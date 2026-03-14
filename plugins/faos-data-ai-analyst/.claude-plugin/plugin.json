@@ -1,0 +1,18 @@
+{
+  "_generated_by": "export-plugins.py",
+  "name": "faos-data-ai-analyst",
+  "version": "1.0.0",
+  "description": "📊 Data-AI Analyst — Data-AI Analyst + Business Intelligence Specialist",
+  "author": {
+    "name": "FAOS Framework",
+    "url": "https://github.com/frank-luongt/Foundation-AgenticOS"
+  },
+  "repository": "https://github.com/frank-luongt/Foundation-AgenticOS",
+  "license": "Apache-2.0",
+  "keywords": [
+    "faos",
+    "data-ai-analyst",
+    "data-ai",
+    "bmm"
+  ]
+}
