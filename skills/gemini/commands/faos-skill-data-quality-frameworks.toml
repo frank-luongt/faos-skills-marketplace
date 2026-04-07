@@ -28,7 +28,6 @@ Production patterns for implementing data quality with Great Expectations, dbt t
 - Define expectations/tests and contract rules.
 - Automate validation in CI/CD and schedule checks.
 - Set alerting, ownership, and remediation steps.
-- If detailed patterns are required, open `resources/implementation-playbook.md`.
 
 ## Safety
 
@@ -37,5 +36,4 @@ Production patterns for implementing data quality with Great Expectations, dbt t
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed frameworks, templates, and examples.
 """

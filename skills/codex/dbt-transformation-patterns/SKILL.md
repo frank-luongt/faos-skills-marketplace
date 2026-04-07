@@ -28,10 +28,8 @@ Production-ready patterns for dbt (data build tool) including model organization
 - Implement tests, documentation, and freshness checks.
 - Choose materializations and incremental strategies.
 - Optimize runs with selectors and CI workflows.
-- If detailed patterns are required, open `resources/implementation-playbook.md`.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed dbt patterns and examples.
 
 <!-- Source: .faos/custom/skills/data/dbt-transformation-patterns/SKILL.md -->

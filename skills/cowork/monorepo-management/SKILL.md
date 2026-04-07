@@ -30,10 +30,8 @@ Build efficient, scalable monorepos that enable code sharing, consistent tooling
 - Clarify goals, constraints, and required inputs.
 - Apply relevant best practices and validate outcomes.
 - Provide actionable steps and verification.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.
 
 <!-- Source: .faos/custom/skills/architecture/monorepo-management/SKILL.md -->

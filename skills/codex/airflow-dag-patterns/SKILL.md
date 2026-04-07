@@ -30,7 +30,6 @@ Production-ready patterns for Apache Airflow including DAG design, operators, se
 3. Implement DAGs with observability and alerting hooks.
 4. Validate in staging and document operational runbooks.
 
-Refer to `resources/implementation-playbook.md` for detailed patterns, checklists, and templates.
 
 ## Safety
 
@@ -39,6 +38,5 @@ Refer to `resources/implementation-playbook.md` for detailed patterns, checklist
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns, checklists, and templates.
 
 <!-- Source: .faos/custom/skills/data/airflow-dag-patterns/SKILL.md -->

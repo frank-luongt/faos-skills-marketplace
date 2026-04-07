@@ -28,10 +28,8 @@ Comprehensive patterns for creating, maintaining, and validating OpenAPI 3.1 spe
 - Clarify goals, constraints, and required inputs.
 - Apply relevant best practices and validate outcomes.
 - Provide actionable steps and verification.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.
 
 <!-- Source: .faos/custom/skills/backend/openapi-spec-generation/SKILL.md -->

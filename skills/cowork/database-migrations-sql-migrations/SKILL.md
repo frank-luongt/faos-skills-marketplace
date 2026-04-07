@@ -29,7 +29,6 @@ $ARGUMENTS
 - Clarify goals, constraints, and required inputs.
 - Apply relevant best practices and validate outcomes.
 - Provide actionable steps and verification.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 ## Output Format
 
@@ -45,6 +44,5 @@ Focus on production-ready SQL migrations with zero-downtime deployment strategie
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.
 
 <!-- Source: .faos/custom/skills/data/database-migrations-sql-migrations/SKILL.md -->

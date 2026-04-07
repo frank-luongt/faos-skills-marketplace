@@ -32,10 +32,8 @@ Master REST and GraphQL API design principles to build intuitive, scalable, and 
 3. Specify errors, versioning, pagination, and auth strategy.
 4. Validate with examples and review for consistency.
 
-Refer to `resources/implementation-playbook.md` for detailed patterns, checklists, and templates.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns, checklists, and templates.
 
 <!-- Source: .faos/custom/skills/backend/api-design-principles/SKILL.md -->

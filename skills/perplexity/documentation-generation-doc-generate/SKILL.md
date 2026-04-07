@@ -33,7 +33,6 @@ $ARGUMENTS
 - Extract information from code, configs, and comments.
 - Generate docs with consistent terminology and structure.
 - Add automation (linting, CI) and validate accuracy.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 ## Safety
 
@@ -47,6 +46,5 @@ $ARGUMENTS
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed examples and templates.
 
 <!-- Source: .faos/custom/skills/documentation/documentation-generation-doc-generate/SKILL.md -->

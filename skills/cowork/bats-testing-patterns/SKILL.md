@@ -29,10 +29,8 @@ Comprehensive guidance for writing comprehensive unit tests for shell scripts us
 - Set up a test structure with helpers and fixtures.
 - Write tests for exit codes, output, and side effects.
 - Add setup/teardown and run tests in CI.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.
 
 <!-- Source: .faos/custom/skills/testing/bats-testing-patterns/SKILL.md -->

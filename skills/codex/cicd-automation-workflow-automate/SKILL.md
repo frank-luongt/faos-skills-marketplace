@@ -38,7 +38,6 @@ $ARGUMENTS
 - Define pipeline stages with caching, artifacts, and quality gates.
 - Add security scans, secret handling, and approvals for risky steps.
 - Document rollout, rollback, and notification strategy.
-- If detailed workflow patterns are required, open `resources/implementation-playbook.md`.
 
 ## Output Format
 
@@ -49,6 +48,5 @@ $ARGUMENTS
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed workflow patterns and examples.
 
 <!-- Source: .faos/custom/skills/devops/cicd-automation-workflow-automate/SKILL.md -->

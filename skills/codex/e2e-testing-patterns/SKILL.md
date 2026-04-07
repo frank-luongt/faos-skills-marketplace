@@ -39,6 +39,5 @@ Build reliable, fast, and maintainable end-to-end test suites that provide confi
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed E2E patterns and templates.
 
 <!-- Source: .faos/custom/skills/testing/e2e-testing-patterns/SKILL.md -->

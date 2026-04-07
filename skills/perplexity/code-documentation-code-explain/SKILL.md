@@ -34,7 +34,6 @@ $ARGUMENTS
 - Explain the high-level flow, then drill into key components.
 - Use diagrams, pseudocode, or examples when useful.
 - Call out pitfalls, edge cases, and key terminology.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 ## Output Format
 
@@ -45,6 +44,5 @@ $ARGUMENTS
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed examples and templates.
 
 <!-- Source: .faos/custom/skills/documentation/code-documentation-code-explain/SKILL.md -->

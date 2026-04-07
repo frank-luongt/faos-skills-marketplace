@@ -72,6 +72,5 @@ app.post('/api/users',
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.
 
 <!-- Source: .faos/custom/skills/testing/tdd-workflows-tdd-green/SKILL.md -->

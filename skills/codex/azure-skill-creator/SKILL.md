@@ -172,7 +172,7 @@ See `references/azure-sdk-patterns.md` for detailed patterns including:
 ```markdown
 ---
 name: skill-creator
-description: |
+description: "Skill Creator"
   Azure AI Example SDK for Python. Use for [specific service features].
   Triggers: "example service", "create example", "list examples".
 ---
@@ -329,7 +329,7 @@ Skills are organized by **language** and **product area** in the `skills/` direc
 ```yaml
 ---
 name: skill-name-py
-description: |
+description: "Skill Creator"
   Azure Service SDK for Python. Use for [specific features].
   Triggers: "service name", "create resource", "specific operation".
 ---

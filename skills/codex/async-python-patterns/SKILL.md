@@ -31,12 +31,9 @@ Comprehensive guidance for implementing asynchronous Python applications using a
 - Pick concurrency patterns (tasks, gather, queues, pools) with cancellation rules.
 - Add timeouts, backpressure, and structured error handling.
 - Include testing and debugging guidance for async code paths.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
-Refer to `resources/implementation-playbook.md` for detailed patterns and examples.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.
 
 <!-- Source: .faos/custom/skills/backend/async-python-patterns/SKILL.md -->

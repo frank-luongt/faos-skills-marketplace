@@ -31,7 +31,6 @@ Guide to optimizing vector indexes for production performance.
 3. Benchmark parameter sweeps using real queries and track recall, latency, and memory.
 4. Validate changes on a staging dataset before rolling out to production.
 
-Refer to `resources/implementation-playbook.md` for detailed patterns, checklists, and templates.
 
 ## Safety
 
@@ -41,6 +40,5 @@ Refer to `resources/implementation-playbook.md` for detailed patterns, checklist
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns, checklists, and templates.
 
 <!-- Source: .faos/custom/skills/ai-ml/vector-index-tuning/SKILL.md -->

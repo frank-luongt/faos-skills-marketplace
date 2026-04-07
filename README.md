@@ -1,6 +1,6 @@
 # FAOS Skills Marketplace
 
-> **527+ AI-powered skills and 31 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
+> **526+ AI-powered skills and 31 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
 
 The largest open-source AI skills marketplace. Built by the [FAOS Framework](https://faosx.ai) team.
 
@@ -57,7 +57,7 @@ cp -r skills/perplexity/ .perplexity/skills/
 
 ## What's Inside
 
-### Skills (527+)
+### Skills (526+) — [Browse the full catalog](CATALOG.md)
 
 | Category | Count | Examples |
 |---|---|---|
@@ -84,17 +84,17 @@ Full persona agents with communication styles, KPIs, decision patterns, and voca
 
 | Platform | Skills | Plugins | Format |
 |---|---|---|---|
-| Claude Cowork | 527 | 31 | SKILL.md |
-| OpenAI Codex | 527 | - | SKILL.md + openai.yaml |
-| Gemini CLI | 527 | - | TOML commands |
-| GitHub Copilot | 527 | - | .instructions.md |
-| Perplexity Computer | 527 | - | SKILL.md |
+| Claude Cowork | 526 | 31 | SKILL.md |
+| OpenAI Codex | 526 | - | SKILL.md + openai.yaml |
+| Gemini CLI | 526 | - | TOML commands |
+| GitHub Copilot | 526 | - | .instructions.md |
+| Perplexity Computer | 526 | - | SKILL.md |
 
 ## Skills Marketplace vs FAOS Platform
 
 | Feature | Marketplace (Free) | FAOS Platform |
 | --- | --- | --- |
-| 527+ portable skills | Yes | Yes |
+| 526+ portable skills | Yes | Yes |
 | 31 agent plugins | Yes | Yes |
 | 5 platform formats | Yes | Yes |
 | Creative extension (brainstorming, design thinking, storytelling) | Yes | Yes |
@@ -118,11 +118,11 @@ Skills give your AI instructions. **FAOS gives your AI understanding.**
 ```
 faos-skills-marketplace/
 ├── skills/
-│   ├── cowork/              # Claude Cowork — 527 SKILL.md files (flat)
+│   ├── cowork/              # Claude Cowork — 526 SKILL.md files (flat)
 │   │   ├── code-review/SKILL.md
 │   │   ├── dev-story/SKILL.md
 │   │   ├── prd-creation/SKILL.md
-│   │   └── ... (527 skill directories)
+│   │   └── ... (526 skill directories)
 │   ├── codex/               # OpenAI Codex — SKILL.md
 │   ├── gemini/              # Gemini CLI — TOML commands
 │   ├── copilot/             # GitHub Copilot — .instructions.md

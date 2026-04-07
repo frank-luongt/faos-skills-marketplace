@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "faos-skills-marketplace",
-  "description": "527+ AI skills and 31 agent plugins for Claude Code. Apache 2.0.",
+  "description": "526+ AI skills and 31 agent plugins for Claude Code. Apache 2.0.",
   "owner": {
     "name": "FAOS Framework",
     "email": "support@faosx.ai"

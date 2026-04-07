@@ -29,10 +29,8 @@ Comprehensive guide to implementing CQRS (Command Query Responsibility Segregati
 - Define command and query models with clear boundaries.
 - Implement read model projections and synchronization.
 - Validate performance, recovery, and failure modes.
-- If detailed patterns are required, open `resources/implementation-playbook.md`.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed CQRS patterns and templates.
 
 <!-- Source: .faos/custom/skills/architecture/cqrs-implementation/SKILL.md -->

@@ -19,7 +19,6 @@ description: Create Mermaid diagrams for flowcharts, sequences, ERDs, and
 - Clarify goals, constraints, and required inputs.
 - Apply relevant best practices and validate outcomes.
 - Provide actionable steps and verification.
-- If detailed examples are required, open `resources/implementation-playbook.md`.
 
 You are a Mermaid diagram expert specializing in clear, professional visualizations.
 

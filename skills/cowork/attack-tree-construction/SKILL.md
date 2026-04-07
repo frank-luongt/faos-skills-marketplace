@@ -28,7 +28,6 @@ Systematic attack path visualization and analysis.
 - Decompose into sub-goals with AND/OR structure.
 - Annotate leaves with cost, skill, time, and detectability.
 - Map mitigations per branch and prioritize high-impact paths.
-- If detailed templates are required, open `resources/implementation-playbook.md`.
 
 ## Safety
 
@@ -37,6 +36,5 @@ Systematic attack path visualization and analysis.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns, templates, and examples.
 
 <!-- Source: .faos/custom/skills/security/attack-tree-construction/SKILL.md -->

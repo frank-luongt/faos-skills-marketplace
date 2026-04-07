@@ -32,7 +32,6 @@ Master automated billing systems including recurring billing, invoice generation
 - Implement invoicing, payments, retries, and dunning workflows.
 - Model taxes and compliance requirements per region.
 - Validate with sandbox payments and reconcile ledger outputs.
-- If detailed templates are required, open `resources/implementation-playbook.md`.
 
 ## Safety
 
@@ -41,6 +40,5 @@ Master automated billing systems including recurring billing, invoice generation
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns, checklists, and examples.
 
 <!-- Source: .faos/custom/skills/business/billing-automation/SKILL.md -->

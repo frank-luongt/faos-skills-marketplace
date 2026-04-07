@@ -13,7 +13,7 @@
 ```markdown
 ---
 name: azure-example-py
-description: |
+description: "Skill Creator Acceptance Criteria"
   Azure Example SDK for Python. Use for creating and managing examples.
   Triggers: "create example", "list examples", "azure example sdk".
 ---
@@ -96,7 +96,7 @@ description: A skill for doing things.
 ```yaml
 ---
 name: azure-ai-agents-py
-description: |
+description: "Skill Creator Acceptance Criteria"
   Azure AI Agents SDK for Python. Use for creating agents with tools,
   managing threads, streaming responses, and function calling.
   Triggers: "create agent", "azure agents", "function calling", "streaming agents".
@@ -166,7 +166,7 @@ AzureAiAgentsPy       # Uses camelCase
 ### 4.1 ✅ CORRECT: Description with What + When + Triggers
 
 ```yaml
-description: |
+description: "Skill Creator Acceptance Criteria"
   Azure AI Search SDK for Python. Use for vector search, hybrid search,
   index management, and document operations.
   Triggers: "semantic search", "vector index", "azure search", "hybrid search".
@@ -181,7 +181,7 @@ description: FastAPI router patterns with CRUD, auth, and response models. Trigg
 ### 4.3 ❌ INCORRECT: Too Verbose
 
 ```yaml
-description: |
+description: "Skill Creator Acceptance Criteria"
   This is a comprehensive skill that covers all aspects of the Azure AI Search
   SDK for Python. It includes detailed information about how to create indexes,
   manage documents, perform searches, and configure analyzers. The skill also

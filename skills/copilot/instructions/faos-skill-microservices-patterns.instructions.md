@@ -36,4 +36,3 @@ Master microservices architecture patterns including service boundaries, inter-s
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed patterns and examples.

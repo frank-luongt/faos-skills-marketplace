@@ -29,10 +29,8 @@ Transform debugging from frustrating guesswork into systematic problem-solving w
 - Form hypotheses and design controlled experiments.
 - Narrow scope with binary search and targeted instrumentation.
 - Document findings and verify the fix.
-- If detailed playbooks are required, open `resources/implementation-playbook.md`.
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed debugging patterns and checklists.
 
 <!-- Source: .faos/custom/skills/testing/debugging-strategies/SKILL.md -->

@@ -27,7 +27,6 @@ Transform code reviews from gatekeeping to knowledge sharing through constructiv
 - Review for correctness, security, performance, and maintainability.
 - Provide actionable feedback with severity and rationale.
 - Ask clarifying questions when intent is unclear.
-- If detailed checklists are required, open `resources/implementation-playbook.md`.
 
 ## Output Format
 
@@ -38,6 +37,5 @@ Transform code reviews from gatekeeping to knowledge sharing through constructiv
 
 ## Resources
 
-- `resources/implementation-playbook.md` for detailed review patterns and templates.
 
 <!-- Source: .faos/custom/skills/testing/code-review-excellence/SKILL.md -->
