@@ -95,8 +95,6 @@ Full persona agents with communication styles, KPIs, decision patterns, and voca
 
 Skills give your AI instructions. **FAOS Ontology gives your AI understanding.**
 
-[Start free trial →](https://faosx.ai/signup)
-
 ## How It Works
 
 ```
