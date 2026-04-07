@@ -48,7 +48,7 @@ snyk container test faos-api:latest --severity-threshold=high
 
 # GCP Artifact Registry: automatic scanning
 gcloud artifacts docker images list-vulnerabilities \
-  asia-southeast1-docker.pkg.dev/foundation-aos/faos/faos-api:latest \
+  REGION-docker.pkg.dev/PROJECT/REPO/my-app:latest \
   --format=json | jq '.[] | select(.vulnerability.effectiveSeverity == "CRITICAL")'
 ```
 
@@ -344,7 +344,7 @@ spec:
         app: faos-api
     spec:
       # Security: Use dedicated service account (not default)
-      serviceAccountName: faos-api-sa
+      serviceAccountName: my-app-sa
       automountServiceAccountToken: false  # Disable unless needed
 
       # Security: Prevent privilege escalation via hostPID/hostNetwork
@@ -363,7 +363,7 @@ spec:
 
       containers:
         - name: faos-api
-          image: asia-southeast1-docker.pkg.dev/foundation-aos/faos/faos-api@sha256:abc123...
+          image: REGION-docker.pkg.dev/PROJECT/REPO/my-app@sha256:abc123...
           ports:
             - containerPort: 8000
               protocol: TCP

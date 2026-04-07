@@ -1,6 +1,6 @@
 # FAOS Skills Marketplace
 
-> **536+ AI-powered skills and 42 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
+> **527+ AI-powered skills and 31 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
 
 The largest open-source AI skills marketplace. Built by the [FAOS Framework](https://faosx.ai) team.
 
@@ -11,11 +11,11 @@ The largest open-source AI skills marketplace. Built by the [FAOS Framework](htt
 ### Claude Cowork
 
 ```bash
-# Install a single skill
-cp skills/cowork/engineering/dev-story/SKILL.md .claude/skills/
+# Install a single skill (e.g., code-review)
+cp skills/cowork/code-reviewer/SKILL.md .claude/skills/
 
-# Install all engineering skills
-cp -r skills/cowork/engineering/ .claude/skills/
+# Install all skills
+cp -r skills/cowork/*/SKILL.md .claude/skills/
 
 # Install an agent plugin (e.g., CTO persona)
 cp -r plugins/faos-cto/ ~/.claude/plugins/faos-cto/
@@ -57,7 +57,7 @@ cp -r skills/perplexity/ .perplexity/skills/
 
 ## What's Inside
 
-### Skills (536+)
+### Skills (527+)
 
 | Category | Count | Examples |
 |---|---|---|
@@ -68,7 +68,7 @@ cp -r skills/perplexity/ .perplexity/skills/
 | Operations & Leadership | 70+ | Board prep, financial review, talent review, security posture |
 | Creative & Design | 38+ | Brainstorming, design thinking, storytelling, wireframes, diagrams |
 
-### Agent Plugins (42)
+### Agent Plugins (31)
 
 Full persona agents with communication styles, KPIs, decision patterns, and vocabulary:
 
@@ -79,24 +79,23 @@ Full persona agents with communication styles, KPIs, decision patterns, and voca
 - **GTM (3):** Sales Executive, Marketing Executive, Customer Service Manager
 - **Delivery (2):** Scrum Master, Tech Writer
 - **Quality (1):** Test Architect
-- **Creative (11):** Brainstorming Coach, Design Thinking Coach, Problem Solver, Innovation Strategist, Presentation Master, Storyteller, Renaissance Polymath, Surrealist Provocateur, Lateral Thinker, Mythic Storyteller, Combinatorial Genius
 
 ### Supported Platforms
 
 | Platform | Skills | Plugins | Format |
 |---|---|---|---|
-| Claude Cowork | 536 | 31 | SKILL.md |
-| OpenAI Codex | 536 | - | SKILL.md + openai.yaml |
-| Gemini CLI | 536 | - | TOML commands |
-| GitHub Copilot | 536 | - | .instructions.md |
-| Perplexity Computer | 536 | - | SKILL.md |
+| Claude Cowork | 527 | 31 | SKILL.md |
+| OpenAI Codex | 527 | - | SKILL.md + openai.yaml |
+| Gemini CLI | 527 | - | TOML commands |
+| GitHub Copilot | 527 | - | .instructions.md |
+| Perplexity Computer | 527 | - | SKILL.md |
 
 ## Skills Marketplace vs FAOS Platform
 
 | Feature | Marketplace (Free) | FAOS Platform |
 | --- | --- | --- |
-| 536+ portable skills | Yes | Yes |
-| 42 agent plugins | Yes | Yes |
+| 527+ portable skills | Yes | Yes |
+| 31 agent plugins | Yes | Yes |
 | 5 platform formats | Yes | Yes |
 | Creative extension (brainstorming, design thinking, storytelling) | Yes | Yes |
 | Apache 2.0 license | Yes | Yes |
@@ -119,22 +118,21 @@ Skills give your AI instructions. **FAOS gives your AI understanding.**
 ```
 faos-skills-marketplace/
 ├── skills/
-│   ├── cowork/              # Claude Cowork — SKILL.md
-│   │   ├── engineering/     # 180+ skills
-│   │   ├── product/         # 90+ skills
-│   │   ├── growth/          # 80+ skills
-│   │   ├── data-ai/         # 60+ skills
-│   │   ├── leadership/      # 70+ skills
-│   │   └── creative/        # 38+ skills
-│   ├── codex/               # OpenAI Codex — SKILL.md + openai.yaml
+│   ├── cowork/              # Claude Cowork — 527 SKILL.md files (flat)
+│   │   ├── code-review/SKILL.md
+│   │   ├── dev-story/SKILL.md
+│   │   ├── prd-creation/SKILL.md
+│   │   └── ... (527 skill directories)
+│   ├── codex/               # OpenAI Codex — SKILL.md
 │   ├── gemini/              # Gemini CLI — TOML commands
 │   ├── copilot/             # GitHub Copilot — .instructions.md
 │   └── perplexity/          # Perplexity Computer — SKILL.md
-├── plugins/                 # 42 agent plugins
+├── plugins/                 # 31 agent plugins
 │   ├── faos-ceo/
 │   ├── faos-cto/
 │   ├── faos-architect/
-│   └── ...
+│   └── ... (31 plugin directories)
+├── .claude-plugin/          # Claude Cowork marketplace manifest
 ├── marketplace.json         # Registry metadata
 ├── CONTRIBUTING.md          # How to contribute
 ├── SECURITY.md              # Security policy

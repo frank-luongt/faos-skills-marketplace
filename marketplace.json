@@ -1,7 +1,7 @@
 {
   "name": "faos-skills-marketplace",
   "version": "1.0.0",
-  "description": "520+ AI-powered skills and 31 agent plugins for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer",
+  "description": "527+ AI-powered skills and 31 agent plugins for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer",
   "author": {
     "name": "FAOS Framework",
     "url": "https://faosx.ai"
@@ -10,24 +10,24 @@
   "license": "Apache-2.0",
   "platforms": {
     "cowork": {
-      "skills_count": 520,
+      "skills_count": 527,
       "plugins_count": 31,
       "format": "SKILL.md (YAML frontmatter: name, description, tags)"
     },
     "codex": {
-      "skills_count": 520,
+      "skills_count": 527,
       "format": "SKILL.md (YAML frontmatter: name, description) + agents/openai.yaml"
     },
     "gemini": {
-      "skills_count": 520,
+      "skills_count": 527,
       "format": "TOML commands (.gemini/commands/faos-skill-*.toml)"
     },
     "copilot": {
-      "skills_count": 520,
+      "skills_count": 527,
       "format": ".instructions.md (YAML frontmatter: applyTo) in .github/instructions/"
     },
     "perplexity": {
-      "skills_count": 520,
+      "skills_count": 527,
       "format": "SKILL.md (YAML frontmatter: name, description, tags, subagent annotations)"
     }
   },

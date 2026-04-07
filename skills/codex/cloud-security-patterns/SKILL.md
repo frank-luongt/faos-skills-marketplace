@@ -174,7 +174,7 @@ alertPolicy:
         labelExtractors:
           principal: "EXTRACT(protoPayload.authenticationInfo.principalEmail)"
   notificationChannels:
-    - projects/foundation-aos/notificationChannels/security-team
+    - projects/my-gcp-project/notificationChannels/security-team
   alertStrategy:
     autoClose: 604800s  # 7 days
 ```
@@ -183,14 +183,14 @@ alertPolicy:
 
 ### Example 1: GKE Private Cluster with Workload Identity
 
-This configuration is directly relevant to FAOS infrastructure:
+This configuration demonstrates GCP security best practices:
 
 ```hcl
 # Terraform: Private GKE cluster with Workload Identity
 resource "google_container_cluster" "faos_cluster" {
-  name     = "faos-cluster-dev"
+  name     = "my-gke-cluster"
   location = "asia-southeast1-a"
-  project  = "foundation-aos"
+  project  = "my-gcp-project"
 
   # Private cluster configuration
   private_cluster_config {
@@ -209,7 +209,7 @@ resource "google_container_cluster" "faos_cluster" {
 
   # Workload Identity for keyless service account access
   workload_identity_config {
-    workload_pool = "foundation-aos.svc.id.goog"
+    workload_pool = "my-gcp-project.svc.id.goog"
   }
 
   # Binary Authorization for image verification
@@ -254,23 +254,23 @@ resource "google_container_cluster" "faos_cluster" {
 
 # Workload Identity binding for application service account
 resource "google_service_account" "app_sa" {
-  account_id   = "faos-api-sa"
+  account_id   = "my-app-sa"
   display_name = "FAOS API Service Account"
-  project      = "foundation-aos"
+  project      = "my-gcp-project"
 }
 
 resource "google_service_account_iam_binding" "workload_identity" {
   service_account_id = google_service_account.app_sa.name
   role               = "roles/iam.workloadIdentityUser"
   members = [
-    "serviceAccount:foundation-aos.svc.id.goog[faos-api/faos-api-sa]"
+    "serviceAccount:my-gcp-project.svc.id.goog[my-namespace/my-app-sa]"
   ]
 }
 
 # Kubernetes ServiceAccount annotation for Workload Identity
 resource "kubernetes_service_account" "app_sa" {
   metadata {
-    name      = "faos-api-sa"
+    name      = "my-app-sa"
     namespace = "faos-api"
     annotations = {
       "iam.gke.io/gcp-service-account" = google_service_account.app_sa.email
@@ -286,10 +286,10 @@ resource "kubernetes_service_account" "app_sa" {
 # create-least-privilege-sa.sh
 # Creates service accounts with minimum required permissions for FAOS components
 
-PROJECT="foundation-aos"
+PROJECT="my-gcp-project"
 
 # API service account: needs Cloud SQL, Secret Manager, Cloud Storage
-gcloud iam service-accounts create faos-api-sa \
+gcloud iam service-accounts create my-app-sa \
   --display-name="FAOS API Service Account" \
   --project=$PROJECT
 
@@ -305,7 +305,7 @@ declare -A API_ROLES=(
 for role in "${!API_ROLES[@]}"; do
   echo "Granting ${role}: ${API_ROLES[$role]}"
   gcloud projects add-iam-policy-binding $PROJECT \
-    --member="serviceAccount:faos-api-sa@${PROJECT}.iam.gserviceaccount.com" \
+    --member="serviceAccount:my-app-sa@${PROJECT}.iam.gserviceaccount.com" \
     --role="$role" \
     --condition=None
 done
@@ -335,7 +335,7 @@ done
 echo "=== API SA Roles ==="
 gcloud projects get-iam-policy $PROJECT \
   --flatten="bindings[].members" \
-  --filter="bindings.members:faos-api-sa@" \
+  --filter="bindings.members:my-app-sa@" \
   --format="table(bindings.role)"
 
 echo "=== Worker SA Roles ==="

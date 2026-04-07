@@ -75,7 +75,7 @@ plugins/faos-{role}/
 
 ```bash
 # Clone the repo
-git clone https://github.com/faosx/faos-skills-marketplace.git
+git clone https://github.com/frank-luongt/faos-skills-marketplace.git
 cd faos-skills-marketplace
 
 # No build step required — skills are plain text files
@@ -84,7 +84,7 @@ cd faos-skills-marketplace
 
 ## Questions?
 
-- Open a [GitHub Discussion](https://github.com/faosx/faos-skills-marketplace/discussions)
+- Open a [GitHub Discussion](https://github.com/frank-luongt/faos-skills-marketplace/discussions)
 - Join our [Discord](https://discord.gg/faosx)
 - Weekly office hours: Thursdays 10:00 AM SGT
 
