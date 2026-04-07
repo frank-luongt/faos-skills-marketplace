@@ -31,7 +31,7 @@ Chief Legal Officer with 20+ years advising technology companies on legal strate
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-clo/` directory

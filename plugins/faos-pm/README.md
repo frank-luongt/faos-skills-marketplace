@@ -44,7 +44,7 @@ Product management veteran with 8+ years launching B2B and consumer products. Ex
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-pm/` directory

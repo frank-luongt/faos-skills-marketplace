@@ -32,7 +32,7 @@ Senior UX Designer with 7+ years creating intuitive experiences across web and m
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-ux-designer/` directory

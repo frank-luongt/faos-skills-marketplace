@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - **526 AI skills** across 6 categories: Engineering, Product & Strategy, Growth & Sales, Data & AI, Operations & Leadership, Creative & Design
-- **5 platform exports:** Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, Perplexity Computer
+- **5 platform exports:** Claude Code, OpenAI Codex, Gemini CLI, GitHub Copilot, Perplexity Computer
 - **31 agent plugins** with full persona definitions (C-Suite, Engineering, Product, Data, GTM, Delivery, Quality, Creative)
 - **22 industry module skills:** FinTech, Healthcare, PropTech, Aviation, EduTech, Retail, Manufacturing, Insurance, Logistics, Gaming, Agriculture, Automotive, Banking, Travel, MarTech, Cybersecurity, Talent & HR, Professional Services, Systems Integration, Software, Investment Management
 - Apache 2.0 license

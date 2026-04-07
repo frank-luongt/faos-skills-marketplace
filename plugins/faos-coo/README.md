@@ -35,7 +35,7 @@ Chief Operating Officer with 16+ years scaling operations at high-growth tech co
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-coo/` directory

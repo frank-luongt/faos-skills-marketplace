@@ -30,7 +30,7 @@ Chief Technology Officer with 15+ years building and scaling technology platform
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-cto/` directory

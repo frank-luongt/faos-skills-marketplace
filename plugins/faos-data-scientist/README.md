@@ -36,7 +36,7 @@ Senior data scientist with 8+ years building ML models across industries. Expert
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-data-scientist/` directory

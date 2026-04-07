@@ -39,7 +39,7 @@ Senior data engineer with 10+ years building production-grade data pipelines. Ex
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-data-engineer/` directory

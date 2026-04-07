@@ -31,7 +31,7 @@ Chief Human Resources Officer with 17+ years building people-first organizations
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-chro/` directory

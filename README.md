@@ -1,6 +1,6 @@
 # FAOS Skills Marketplace
 
-> **526+ AI-powered skills and 31 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
+> **526+ AI-powered skills and 31 agent plugins** for Claude Code, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
 
 The largest open-source AI skills marketplace. Built by the [FAOS Framework](https://faosx.ai) team.
 
@@ -8,7 +8,7 @@ The largest open-source AI skills marketplace. Built by the [FAOS Framework](htt
 
 ## Quick Install
 
-### Claude Cowork
+### Claude Code
 
 ```bash
 # Install a single skill (e.g., code-review)
@@ -84,7 +84,7 @@ Full persona agents with communication styles, KPIs, decision patterns, and voca
 
 | Platform | Skills | Plugins | Format |
 |---|---|---|---|
-| Claude Cowork | 526 | 31 | SKILL.md |
+| Claude Code | 526 | 31 | SKILL.md |
 | OpenAI Codex | 526 | - | SKILL.md + openai.yaml |
 | Gemini CLI | 526 | - | TOML commands |
 | GitHub Copilot | 526 | - | .instructions.md |
@@ -118,7 +118,7 @@ Skills give your AI instructions. **FAOS gives your AI understanding.**
 ```
 faos-skills-marketplace/
 ├── skills/
-│   ├── cowork/              # Claude Cowork — 526 SKILL.md files (flat)
+│   ├── cowork/              # Claude Code — 526 SKILL.md files (flat)
 │   │   ├── code-review/SKILL.md
 │   │   ├── dev-story/SKILL.md
 │   │   ├── prd-creation/SKILL.md
@@ -132,7 +132,7 @@ faos-skills-marketplace/
 │   ├── faos-cto/
 │   ├── faos-architect/
 │   └── ... (31 plugin directories)
-├── .claude-plugin/          # Claude Cowork marketplace manifest
+├── .claude-plugin/          # Claude Code marketplace manifest
 ├── marketplace.json         # Registry metadata
 ├── CONTRIBUTING.md          # How to contribute
 ├── SECURITY.md              # Security policy

@@ -33,7 +33,7 @@ Chief Product Officer with 12+ years building products that users love. Expert i
 
 ## Installation
 
-### Claude Cowork (Desktop)
+### Claude Code (Desktop)
 1. Download or clone this plugin directory
 2. In Claude Desktop: Settings > Plugins > Install from folder
 3. Select the `faos-cpo/` directory
