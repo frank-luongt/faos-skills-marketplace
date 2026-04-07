@@ -85,8 +85,6 @@ cd faos-skills-marketplace
 ## Questions?
 
 - Open a [GitHub Discussion](https://github.com/frank-luongt/faos-skills-marketplace/discussions)
-- Join our [Discord](https://discord.gg/faosx)
-- Weekly office hours: Thursdays 10:00 AM SGT
 
 ## License
 
