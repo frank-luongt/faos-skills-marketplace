@@ -1,8 +1,10 @@
 # FAOS Skills Marketplace
 
-> **520+ AI-powered skills and 31 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
+> **536+ AI-powered skills and 42 agent plugins** for Claude Cowork, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
 
-Built by the [FAOS Framework](https://faosx.ai) — the enterprise agentic operating system.
+The largest open-source AI skills marketplace. Built by the [FAOS Framework](https://faosx.ai) team.
+
+**Apache 2.0 Licensed** — free to use, modify, and distribute commercially.
 
 ## Quick Install
 
@@ -11,6 +13,9 @@ Built by the [FAOS Framework](https://faosx.ai) — the enterprise agentic opera
 ```bash
 # Install a single skill
 cp skills/cowork/engineering/dev-story/SKILL.md .claude/skills/
+
+# Install all engineering skills
+cp -r skills/cowork/engineering/ .claude/skills/
 
 # Install an agent plugin (e.g., CTO persona)
 cp -r plugins/faos-cto/ ~/.claude/plugins/faos-cto/
@@ -52,136 +57,110 @@ cp -r skills/perplexity/ .perplexity/skills/
 
 ## What's Inside
 
-### Skills (520+)
+### Skills (536+)
 
 | Category | Count | Examples |
 |---|---|---|
-| Engineering | 45+ | Dev workflows, code review, architecture, CI/CD |
-| Product | 30+ | PRD creation, sprint planning, story writing |
-| Data & AI | 40+ | Pipeline design, model cards, prompt engineering |
-| Testing | 25+ | Test design, automation, ATDD, performance |
-| C-Suite | 50+ | OKR review, board prep, financial review |
-| Sales | 15+ | Discovery prep, deal qualification, proposals |
-| Marketing | 15+ | Campaigns, ABM, content strategy, personas |
-| Customer Service | 10+ | Ticket resolution, health review, playbooks |
-| Creative | 10+ | Design thinking, storytelling, brainstorming |
-| Industry Modules | 22 | FinTech, Healthcare, PropTech, Aviation, etc. |
+| Engineering | 180+ | Dev workflows, code review, architecture, CI/CD, testing |
+| Product & Strategy | 90+ | PRD creation, sprint planning, OKR review, roadmap |
+| Growth & Sales | 80+ | Deal qualification, proposals, campaigns, ABM |
+| Data & AI | 60+ | Pipeline design, EDA, model cards, prompt engineering, dashboards |
+| Operations & Leadership | 70+ | Board prep, financial review, talent review, security posture |
+| Creative & Design | 38+ | Brainstorming, design thinking, storytelling, wireframes, diagrams |
 
-### Agent Plugins (31)
+### Agent Plugins (42)
 
 Full persona agents with communication styles, KPIs, decision patterns, and vocabulary:
 
-- **C-Suite**: CEO, CTO, CFO, CPO, COO, CRO, CMO, CHRO, CLO, CISO, CDAO
-- **Engineering**: Developer, Architect, SRE, Security Engineer, AI Engineer
-- **Product**: Product Manager, UX Designer, Scrum Master, Business Analyst
-- **Data**: Data Engineer, Data Scientist, Data-AI Analyst, Data-AI Architect
-- **GTM**: Sales Executive, Marketing Executive, Customer Service Manager
-- **Specialized**: Tech Writer, Test Architect, Enterprise Architect
+- **C-Suite (11):** CEO, CTO, CFO, CPO, COO, CRO, CMO, CHRO, CLO, CISO, CDAO
+- **Engineering (6):** Developer, Architect, SRE, Security Engineer, Enterprise Architect, Solo Dev
+- **Product (3):** Product Manager, UX Designer, Business Analyst
+- **Data & AI (5):** AI Engineer, Data Engineer, Data Scientist, Data-AI Architect, Data-AI Analyst
+- **GTM (3):** Sales Executive, Marketing Executive, Customer Service Manager
+- **Delivery (2):** Scrum Master, Tech Writer
+- **Quality (1):** Test Architect
+- **Creative (11):** Brainstorming Coach, Design Thinking Coach, Problem Solver, Innovation Strategist, Presentation Master, Storyteller, Renaissance Polymath, Surrealist Provocateur, Lateral Thinker, Mythic Storyteller, Combinatorial Genius
 
-## Free vs FAOS Platform
+### Supported Platforms
 
-| Feature | Free (This Repo) | FAOS Platform |
-|---|---|---|
-| 520+ portable skills | Yes | Yes |
-| 31 agent plugins | Yes | Yes |
-| Static skill instructions | Yes | Yes |
-| **Dynamic ontology context** | - | Yes |
-| **22 industry knowledge modules** | - | Yes |
-| **Team context alignment** | - | Yes |
-| **Ontology versioning & rollback** | - | Yes |
-| **Real-time WebSocket sync** | - | Yes |
-| **Custom industry modules** | - | Enterprise |
-| **SSO/SAML** | - | Enterprise |
+| Platform | Skills | Plugins | Format |
+|---|---|---|---|
+| Claude Cowork | 536 | 31 | SKILL.md |
+| OpenAI Codex | 536 | - | SKILL.md + openai.yaml |
+| Gemini CLI | 536 | - | TOML commands |
+| GitHub Copilot | 536 | - | .instructions.md |
+| Perplexity Computer | 536 | - | SKILL.md |
 
-Skills give your AI instructions. **FAOS Ontology gives your AI understanding.**
+## Skills Marketplace vs FAOS Platform
 
-## How It Works
+| Feature | Marketplace (Free) | FAOS Platform |
+| --- | --- | --- |
+| 536+ portable skills | Yes | Yes |
+| 42 agent plugins | Yes | Yes |
+| 5 platform formats | Yes | Yes |
+| Creative extension (brainstorming, design thinking, storytelling) | Yes | Yes |
+| Apache 2.0 license | Yes | Yes |
+| 7-Phase Execution Engine | - | Yes |
+| 3-Layer Memory Architecture | - | Yes |
+| Ontology Engine + 22 Industry Blueprints | - | Yes |
+| Agent Autonomy Engine (L0-L3) | - | Yes |
+| Governance Gates & RBAC | - | Yes |
+| Per-Agent Cost Controls & Budgets | - | Yes |
+| Portal, Desktop & Mobile Apps | - | Yes |
+| Multi-Tenant Operations | - | Yes |
+| Enterprise Support & SLA | - | Yes |
 
-```
-┌──────────────────────┐     ┌───────────────────────┐
-│  FAOS Skills (Free)  │     │  FAOS Ontology (Paid) │
-│                      │     │                       │
-│  "Write a PRD for    │     │  Role: Product Manager │
-│   a SaaS product"    │     │  Domain: FinTech       │
-│                      │     │  Industry: Banking     │
-│  Static instructions │     │  KPIs: MRR, CAC, LTV  │
-│  Same for everyone   │     │  Compliance: PCI-DSS   │
-│                      │     │  Context: Your company │
-└──────────┬───────────┘     └───────────┬───────────┘
-           │                             │
-           └──────────┬──────────────────┘
-                      │
-              ┌───────▼────────┐
-              │   AI Output    │
-              │                │
-              │  Without FAOS: │
-              │  Generic PRD   │
-              │                │
-              │  With FAOS:    │
-              │  PRD that knows│
-              │  your industry,│
-              │  your KPIs,    │
-              │  your team     │
-              └────────────────┘
-```
+Skills give your AI instructions. **FAOS gives your AI understanding.**
 
-## Supported Platforms
-
-| Platform | Skills | Plugins | Format | Ontology |
-|---|---|---|---|---|
-| Claude Cowork | Yes | Yes | SKILL.md | Via FAOS Extension |
-| OpenAI Codex | Yes | - | SKILL.md + openai.yaml | Via FAOS Extension |
-| Gemini CLI | Yes | - | TOML commands | Via FAOS Extension |
-| GitHub Copilot | Yes | Yes | .instructions.md + .agent.md | Via FAOS Extension |
-| Perplexity Computer | Yes | - | SKILL.md | Via FAOS Extension |
-| VS Code (native) | - | - | - | Yes |
+[Learn more about the platform](https://faosx.ai) | [Request access](https://faosx.ai/request-access)
 
 ## Repository Structure
 
 ```
 faos-skills-marketplace/
-├── marketplace.json          # Marketplace metadata
 ├── skills/
-│   ├── cowork/              # Claude Cowork format (SKILL.md)
-│   │   ├── engineering/
-│   │   ├── product/
-│   │   ├── data-ai/
-│   │   └── ...
-│   ├── codex/               # OpenAI Codex format (SKILL.md + openai.yaml)
-│   │   ├── engineering/
-│   │   └── ...
-│   ├── gemini/              # Gemini CLI format (TOML commands)
-│   │   └── commands/
-│   │       └── faos-skill-*.toml
-│   ├── copilot/             # GitHub Copilot format (.instructions.md)
-│   │   └── instructions/
-│   │       └── faos-skill-*.instructions.md
-│   └── perplexity/          # Perplexity Computer format (SKILL.md)
-│       ├── engineering/
-│       └── ...
-├── plugins/                  # Claude Cowork agent plugins
+│   ├── cowork/              # Claude Cowork — SKILL.md
+│   │   ├── engineering/     # 180+ skills
+│   │   ├── product/         # 90+ skills
+│   │   ├── growth/          # 80+ skills
+│   │   ├── data-ai/         # 60+ skills
+│   │   ├── leadership/      # 70+ skills
+│   │   └── creative/        # 38+ skills
+│   ├── codex/               # OpenAI Codex — SKILL.md + openai.yaml
+│   ├── gemini/              # Gemini CLI — TOML commands
+│   ├── copilot/             # GitHub Copilot — .instructions.md
+│   └── perplexity/          # Perplexity Computer — SKILL.md
+├── plugins/                 # 42 agent plugins
 │   ├── faos-ceo/
 │   ├── faos-cto/
 │   ├── faos-architect/
 │   └── ...
-├── .github/
-│   └── workflows/
-│       └── sync-from-faos.yml
+├── marketplace.json         # Registry metadata
+├── CONTRIBUTING.md          # How to contribute
+├── SECURITY.md              # Security policy
+├── CHANGELOG.md             # Release history
+├── LICENSE                  # Apache 2.0
 └── README.md
 ```
 
 ## Contributing
 
-Skills are auto-generated from the [FAOS Framework](https://github.com/frank-luongt/Foundation-AgenticOS). To contribute:
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-1. Add or modify skills in `.faos/skills/` in the source repo
-2. Run `python scripts/export-skills.py --target all`
-3. Submit a PR to the source repo
+**Quick version:**
+
+1. Fork this repo
+2. Add or improve skills in `skills/cowork/{category}/`
+3. Submit a PR — we'll handle cross-platform exports
+
+## Security
+
+Found a security issue? See [SECURITY.md](SECURITY.md) for our responsible disclosure process.
 
 ## License
 
-Apache-2.0 — free to use, modify, and distribute.
+Apache 2.0 — see [LICENSE](LICENSE) for full text.
 
 ---
 
-**Built with [FAOS](https://faosx.ai)** — the enterprise agentic operating system that gives AI agents real business context.
+**Built with [FAOS](https://faosx.ai)** — the enterprise agentic operating system.
