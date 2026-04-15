@@ -1,8 +1,8 @@
 # FAOS Skills Marketplace
 
-> **526+ AI-powered skills and 31 agent plugins** for Claude Code, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
+> **930+ AI-powered skills and 31 agent plugins** for Claude Code, OpenAI Codex, Gemini CLI, GitHub Copilot, and Perplexity Computer.
 
-The largest open-source AI skills marketplace. Built by the [FAOS Framework](https://faosx.ai) team.
+The largest open-source AI skills library. Built by the [FAOS Framework](https://faosx.ai) team.
 
 **Apache 2.0 Licensed** — free to use, modify, and distribute commercially.
 
@@ -57,16 +57,18 @@ cp -r skills/perplexity/ .perplexity/skills/
 
 ## What's Inside
 
-### Skills (526+) — [Browse the full catalog](CATALOG.md)
+### Skills (930+) — [Browse the full catalog](CATALOG.md)
 
 | Category | Count | Examples |
 |---|---|---|
-| Engineering | 180+ | Dev workflows, code review, architecture, CI/CD, testing |
-| Product & Strategy | 90+ | PRD creation, sprint planning, OKR review, roadmap |
-| Growth & Sales | 80+ | Deal qualification, proposals, campaigns, ABM |
-| Data & AI | 60+ | Pipeline design, EDA, model cards, prompt engineering, dashboards |
+| Engineering & DevOps | 280+ | Dev workflows, code review, architecture, CI/CD, testing, K8s, Terraform |
+| Cloud & Infrastructure | 120+ | Azure AI/ML, AWS, GCP, Databricks, Snowflake, monitoring |
+| Product & Strategy | 90+ | PRD creation, sprint planning, OKR review, roadmap, startup analysis |
+| Growth & Sales | 80+ | Deal qualification, proposals, campaigns, ABM, marketing psychology |
+| Data & AI/ML | 100+ | LangChain, RAG, fine-tuning, MLOps, vector DBs, prompt engineering |
+| Security & Compliance | 60+ | OWASP, NIST, SOC2, HIPAA, PCI-DSS, threat modeling, SAST |
 | Operations & Leadership | 70+ | Board prep, financial review, talent review, security posture |
-| Creative & Design | 38+ | Brainstorming, design thinking, storytelling, wireframes, diagrams |
+| Creative & Design | 50+ | Brainstorming, design thinking, storytelling, wireframes, diagrams |
 
 ### Agent Plugins (31)
 
@@ -84,17 +86,17 @@ Full persona agents with communication styles, KPIs, decision patterns, and voca
 
 | Platform | Skills | Plugins | Format |
 |---|---|---|---|
-| Claude Code | 526 | 31 | SKILL.md |
-| OpenAI Codex | 526 | - | SKILL.md + openai.yaml |
-| Gemini CLI | 526 | - | TOML commands |
-| GitHub Copilot | 526 | - | .instructions.md |
-| Perplexity Computer | 526 | - | SKILL.md |
+| Claude Code | 932 | 31 | SKILL.md |
+| OpenAI Codex | 923 | — | SKILL.md + openai.yaml |
+| Gemini CLI | 518 | — | TOML commands |
+| GitHub Copilot | 518 | — | .instructions.md |
+| Perplexity Computer | 923 | — | SKILL.md |
 
 ## Skills Marketplace vs FAOS Platform
 
 | Feature | Marketplace (Free) | FAOS Platform |
 | --- | --- | --- |
-| 526+ portable skills | Yes | Yes |
+| 930+ portable skills | Yes | Yes |
 | 31 agent plugins | Yes | Yes |
 | 5 platform formats | Yes | Yes |
 | Creative extension (brainstorming, design thinking, storytelling) | Yes | Yes |
@@ -122,7 +124,7 @@ faos-skills-marketplace/
 │   │   ├── code-review/SKILL.md
 │   │   ├── dev-story/SKILL.md
 │   │   ├── prd-creation/SKILL.md
-│   │   └── ... (526 skill directories)
+│   │   └── ... (930+ skill directories)
 │   ├── codex/               # OpenAI Codex — SKILL.md
 │   ├── gemini/              # Gemini CLI — TOML commands
 │   ├── copilot/             # GitHub Copilot — .instructions.md
